@@ -1,0 +1,198 @@
+.box-what-hot
+  padding: 10px
+  display: flex
+  gap: 17px
+  flex-direction: column
+
+  .label
+    color: #000
+    font-family: 'Roboto'
+    font-size: 14px
+    font-style: normal
+    font-weight: 700
+    line-height: 14px
+    text-transform: uppercase
+
+  .grid-product
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 10px
+    justify-content: space-between
+    justify-items: stretch
+    align-content: space-evenly
+    width: 100%
+
+    .grid-item
+      display: flex
+      justify-content: center
+      .box-product
+        width: 170px
+        border-radius: 12px
+        border: 0.5px solid #AFAFAF
+        background: #FFF
+        .avatar
+          width: 170px
+          height: 170px
+          border-radius: 14px
+          img
+            width: 100%
+            height: 100%
+            border-radius: 10px 10px 0 0
+            border-bottom: none
+            object-fit: cover
+            vertical-align: middle
+            display: block
+
+        .name-card
+          color: #181717
+          text-align: center
+          font-family: 'Roboto'
+          font-size: 12px
+          font-style: normal
+          font-weight: 400
+          line-height: 14px
+
+        .flag-sale
+          position: absolute
+          z-index: 10
+          width: 170px
+          height: 170px
+          img
+            position: absolute
+            left: 0
+            height: 68px
+            object-fit: cover
+
+          .flag-sale-value
+            position: absolute
+            z-index: 11
+            width: 46px
+            height: 68px
+
+            .sale-label
+              color: #FFF
+              text-align: center
+              font-family: 'Roboto'
+              font-size: 10px
+              font-style: normal
+              font-weight: 400
+              line-height: normal
+              padding-top: 10px
+
+            .sale-value
+              color: #FFF
+              text-align: center
+              font-family: 'Roboto'
+              font-size: 12px
+              font-style: normal
+              font-weight: 700
+              line-height: 14px
+        .super-discount-container
+          position: absolute
+          z-index: 12
+          width: 170px
+          height: 170px
+          display: flex
+          justify-content: flex-end
+          flex-direction: column
+
+          .discount-conent
+            width: 100%
+            background: linear-gradient(90.47deg, #5216FE 5.14%, #FE3131 69.71%)
+            border-radius: 0 0 6px 6px
+            padding: 10px 0
+            .content
+              color: #FFC062
+              font-family: 'Roboto'
+              font-size: 12px
+              font-style: normal
+              font-weight: 700
+              line-height: 12px
+              text-align: left
+              padding: 0 10px
+        .box-content-product
+          display: flex
+          padding: 5px
+          flex-direction: column
+          gap: 5px
+
+          .name-product
+            min-height: 30px
+            color: #000
+            font-family: 'Roboto'
+            font-size: 12px
+            font-style: normal
+            font-weight: 400
+            line-height: 15px
+            word-wrap: break-word
+            width: 100%
+            overflow: hidden
+            display: -webkit-box
+            -webkit-line-clamp: 2
+            -webkit-box-orient: vertical
+
+          .promotion-tag-list
+            display: flex
+            gap: 5px
+            .tag
+              color: #FFF
+              font-family: 'Roboto'
+              font-size: 8px
+              font-style: normal
+              font-weight: 500
+              line-height: normal
+              padding: 3px 10px
+              background: #F44336
+          .product-value
+            display: flex
+            align-items: center
+            justify-content: space-between
+            .amount
+              display: flex
+              align-items: center
+              gap: 5px
+              .price-sell
+                color: #0C8441
+                font-family: 'Roboto'
+                font-size: 12px
+                font-style: normal
+                font-weight: 700
+                line-height: normal
+              .price-original
+                color: #BDBDBD
+                font-family: 'Roboto'
+                font-size: 8px
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+                text-decoration-line: strikethrough
+            .sold
+              color: #6B778C
+              text-align: center
+              font-family: 'Roboto'
+              font-size: 10px
+              font-style: normal
+              font-weight: 400
+              line-height: 14px
+          hr
+            background: #BDBDBD
+            height: 0.1px
+            margin: unset
+          .gift-info
+            display: flex
+            align-items: center
+            gap: 5px
+            .avatar-gift
+              border-radius: 6px
+              border: 1px solid #FFCCBC
+              width: fit-content
+              img
+                width: 26px
+                padding: 3px
+            .price
+              color: #172B4D
+              font-family: 'Roboto'
+              font-size: 10px
+              font-style: normal
+              font-weight: 400
+              line-height: 14px
