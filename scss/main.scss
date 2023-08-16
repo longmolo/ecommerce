@@ -1,0 +1,20 @@
+@import "variables";
+
+@import "hero-banners";
+@import "category";
+@import "flash-sale";
+@import "what-hot";
+
+body{
+  margin: unset;
+
+  .feed{
+    //max-width: 768px;
+  }
+}
+
+.partition{
+  background: #ECEFF1;
+  height: 9px;
+  width: 100%;
+}
