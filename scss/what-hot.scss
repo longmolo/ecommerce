@@ -23,8 +23,7 @@
     justify-content: space-between;
     justify-items: stretch;
     align-content: space-evenly;
-    width: 100%;
-    margin-bottom: $distance-common*4px;
+    margin: 0 $distance-common*1px $distance-common*4px;
 
     .grid-item {
       display: flex;
