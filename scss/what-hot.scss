@@ -1,47 +1,47 @@
 .box-what-hot {
-  padding: 10px;
+  background: $white;
   display: flex;
-  gap: 17px;
+  gap: 11px;
   flex-direction: column;
+  padding-top: $distance-common*3px;
 
   .label {
-    color: #000;
-    font-family: 'Roboto';
+    color: $primary-text;
+    font-family: $font-family-common;
     font-size: 14px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: $font-weight-boldest;
     line-height: 14px;
     text-transform: uppercase;
+    padding-left: $distance-common*3px;
   }
 
   .grid-product {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: $distance-common*1px;
     justify-content: space-between;
     justify-items: stretch;
     align-content: space-evenly;
     width: 100%;
+    margin-bottom: $distance-common*4px;
 
     .grid-item {
       display: flex;
       justify-content: center;
 
       .box-product {
-        width: 170px;
-        border-radius: 12px;
-        border: 0.5px solid #AFAFAF;
-        background: #FFF;
+        width: 100%;
+        border: 0.5px solid $gray-5;
+        background: $white;
 
         .avatar {
-          width: 170px;
-          height: 170px;
-          border-radius: 14px;
+          width: 100%;
+          aspect-ratio: 1/1;
 
           img {
             width: 100%;
             height: 100%;
-            border-radius: 10px 10px 0 0;
             border-bottom: none;
             object-fit: cover;
             vertical-align: middle;
@@ -50,7 +50,7 @@
         }
 
         .name-card {
-          color: #181717;
+          color: $black1;
           text-align: center;
           font-family: 'Roboto';
           font-size: 12px;
@@ -62,8 +62,8 @@
         .flag-sale {
           position: absolute;
           z-index: 10;
-          width: 170px;
-          height: 170px;
+          width: 178px;
+          height: 178px;
 
           img {
             position: absolute;
@@ -79,23 +79,23 @@
             height: 68px;
 
             .sale-label {
-              color: #FFF;
+              color: $white;
               text-align: center;
-              font-family: 'Roboto';
+              font-family: $font-family-Label;
               font-size: 10px;
               font-style: normal;
-              font-weight: 400;
+              font-weight: $font-weight-normal;
               line-height: normal;
               padding-top: 10px;
             }
 
             .sale-value {
-              color: #FFF;
+              color: $white;
               text-align: center;
-              font-family: 'Roboto';
+              font-family: $font-family-Label;
               font-size: 12px;
               font-style: normal;
-              font-weight: 700;
+              font-weight: $font-weight-boldest;
               line-height: 14px;
             }
           }
@@ -104,8 +104,8 @@
         .super-discount-container {
           position: absolute;
           z-index: 12;
-          width: 170px;
-          height: 170px;
+          width: 178px;
+          height: 178px;
           display: flex;
           justify-content: flex-end;
           flex-direction: column;
@@ -117,11 +117,11 @@
             padding: 10px 0;
 
             .content {
-              color: #FFC062;
-              font-family: 'Roboto';
+              color: $yellow-label;
+              font-family: $font-family-name;
               font-size: 12px;
               font-style: normal;
-              font-weight: 700;
+              font-weight: $font-weight-boldest;
               line-height: 12px;
               text-align: left;
               padding: 0 10px;
@@ -131,17 +131,17 @@
 
         .box-content-product {
           display: flex;
-          padding: 5px;
+          padding: $distance-common*2px;
           flex-direction: column;
-          gap: 5px;
+          gap: $distance-common*3px;
 
           .name-product {
             min-height: 30px;
-            color: #000;
-            font-family: 'Roboto';
+            color: $primary-text;
+            font-family: $font-family-common;
             font-size: 12px;
             font-style: normal;
-            font-weight: 400;
+            font-weight: $font-weight-normal;
             line-height: 15px;
             word-wrap: break-word;
             width: 100%;
@@ -153,17 +153,18 @@
 
           .promotion-tag-list {
             display: flex;
-            gap: 5px;
+            gap: $distance-common*2px;
 
             .tag {
-              color: #FFF;
-              font-family: 'Roboto';
+              color: $white;
+              font-family: $font-family-common;
               font-size: 8px;
               font-style: normal;
-              font-weight: 500;
+              font-weight: $font-weight-bold;
               line-height: normal;
-              padding: 3px 10px;
-              background: #F44336;
+              padding: $distance-common*1px $distance-common*2px;
+              background-image: url("../assets/image/icon/tag.svg");
+              background-size: cover;
             }
           }
 
@@ -175,69 +176,68 @@
             .amount {
               display: flex;
               align-items: center;
-              gap: 5px;
+              gap: $distance-common*1px;
 
               .price-sell {
-                color: #0C8441;
-                font-family: 'Roboto';
+                color: $primary-b-500;
+                font-family: $font-family-name;
                 font-size: 12px;
                 font-style: normal;
-                font-weight: 700;
+                font-weight: $font-weight-boldest;
                 line-height: normal;
               }
 
               .price-original {
-                color: #BDBDBD;
-                font-family: 'Roboto';
+                color: $gray-4;
+                font-family: $font-family-name;
                 font-size: 8px;
                 font-style: normal;
-                font-weight: 400;
+                font-weight: $font-weight-normal;
                 line-height: normal;
                 text-decoration-line: strikethrough;
               }
             }
 
             .sold {
-              color: #6B778C;
+              color: $placeholder-color;
               text-align: center;
-              font-family: 'Roboto';
+              font-family: $font-family-common;
               font-size: 10px;
               font-style: normal;
-              font-weight: 400;
+              font-weight: $font-weight-normal;
               line-height: 14px;
             }
           }
 
-          hr {
-            background: #BDBDBD;
-            height: 0.1px;
-            margin: unset;
+          //hr {
+          //  background: $gray-4;
+          //  height: 0.3px;
+          //  margin: unset;
+          //}
+        }
+
+        .gift-info {
+          display: flex;
+          align-items: center;
+          margin: 0 $distance-common*2px;
+          gap: $distance-common*1px;
+          border-top: solid $gray-4 0.3px;
+          padding-top: $distance-common*1px;
+          padding-bottom: $distance-common*2px;
+
+          img {
+            width: 32px;
+            border-radius: 6px;
+            border: 1px solid $orange-100;
           }
 
-          .gift-info {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-
-            .avatar-gift {
-              border-radius: 6;
-              border: 1px solid #FFCCBC;
-              width: fit-content;
-
-              img {
-                width: 26px;
-                padding: 3px;
-              }
-            }
-
-            .price {
-              color: #172B4D;
-              font-family: 'Roboto';
-              font-size: 10px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 14px;
-            }
+          .price {
+            color: $text;
+            font-family: $font-family-Label;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: $font-weight-normal;
+            line-height: 14px;
           }
         }
       }

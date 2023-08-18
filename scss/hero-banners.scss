@@ -1,4 +1,6 @@
 .banner-top {
+  position: relative;
+
   .search {
     position: absolute;
     top: $distance-common*2px;
@@ -32,7 +34,7 @@
         font-family: $font-family-common;
         font-size: 14px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: $font-weight-normal;
         line-height: normal;
         border: unset;
         background: unset;
@@ -71,14 +73,14 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          background: $bg-pink1;
+          background: $primary-b-300;
 
           .value{
             color: $white;
             font-family: $font-family-common;
             font-size: 0.5rem;
             font-style: normal;
-            font-weight: 400;
+            font-weight: $font-weight-normal;
           }
         }
       }
@@ -111,11 +113,11 @@
   .swiper-pagination-bullet {
     width: 4px;
     height: 4px;
-    background: $gray1;
+    background: $gray-4;
   }
 
   .swiper-pagination-bullet-active {
-    background: $bg-pink1;
+    background: $primary-b-300;
   }
 
   .swiper-pagination{

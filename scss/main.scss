@@ -7,14 +7,17 @@
 
 body{
   margin: unset;
+  background: #ECEFF1;
 
   .feed{
-    //max-width: 768px;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
   }
-}
 
-.partition{
-  background: #ECEFF1;
-  height: 9px;
-  width: 100%;
+  a{
+    text-decoration: none;
+  }
 }

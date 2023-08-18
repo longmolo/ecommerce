@@ -1,3 +1,6 @@
+.banner-top {
+  position: relative;
+}
 .banner-top .search {
   position: absolute;
   top: 8px;
@@ -105,11 +108,12 @@
 }
 
 .list-category {
-  padding: 10px;
+  background: #FFF;
 }
 .list-category .swiper-category {
   width: 100%;
   height: 190px;
+  margin: 10px 4px;
 }
 .list-category .swiper-category .swiper-slide-cus {
   text-align: center;
@@ -147,27 +151,73 @@
   font-weight: 400;
   line-height: 14px;
 }
+.list-category .box-scroll {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.list-category .box-scroll .flex-2rows {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 170px;
+}
+.list-category .box-scroll .flex-2rows .box-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  flex-direction: column;
+  align-content: center;
+  height: 78px;
+  width: 85px;
+}
+.list-category .box-scroll .flex-2rows .box-card .avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 14px;
+}
+.list-category .box-scroll .flex-2rows .box-card .avatar img {
+  vertical-align: middle;
+  border-style: none;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.list-category .box-scroll .flex-2rows .box-card .name-card {
+  color: #181717;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
 
 .box-product-sale {
-  padding: 10px 0;
+  background: #FFF;
 }
 .box-product-sale .title-sale {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  padding: 4px 0;
 }
 .box-product-sale .title-sale .flash-sale-and-time {
   display: flex;
-  gap: 10px;
-  padding-left: 10px;
+  gap: 8px;
+  padding-left: 8px;
 }
 .box-product-sale .title-sale .flash-sale-and-time .label-sale {
   display: flex;
 }
 .box-product-sale .title-sale .flash-sale-and-time .label-sale .label-flash {
   color: #F44336;
-  font-family: "Roboto";
+  font-family: "SF Pro Text";
   font-size: 16px;
   font-style: normal;
   font-weight: 800;
@@ -176,18 +226,18 @@
 }
 .box-product-sale .title-sale .flash-sale-and-time .label-sale .label-sale {
   color: #F44336;
-  font-family: "Roboto";
+  font-family: "SF Pro Text";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-  padding-left: 5px;
+  padding-left: 8px;
 }
 .box-product-sale .title-sale .flash-sale-and-time .time {
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 4px;
 }
 .box-product-sale .title-sale .flash-sale-and-time .time .number {
   color: #FFF;
@@ -198,16 +248,17 @@
   line-height: 12px;
   border-radius: 4px;
   background: #FF1400;
-  padding: 2px;
-}
-.box-product-sale .title-sale .more {
+  height: 16px;
+  width: 16px;
   display: flex;
   align-items: center;
-  padding-right: 10px;
+  justify-content: center;
+}
+.box-product-sale .title-sale .more {
+  padding-right: 16px;
 }
 .box-product-sale .title-sale .more .label-more {
   color: #FF5722;
-  text-wrap: nowrap;
   font-family: "Roboto";
   font-size: 10px;
   font-style: normal;
@@ -221,12 +272,15 @@
   width: 16px;
 }
 .box-product-sale .list-product-sale {
-  padding: 10px;
+  padding: 8px 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
 }
 .box-product-sale .list-product-sale .flash-sale {
   width: 100%;
-  height: 191px;
-  background: #EEEEEE;
+  height: 100%;
+  padding: 8px;
 }
 .box-product-sale .list-product-sale .flash-sale .swiper-slide-cus {
   text-align: center;
@@ -238,54 +292,47 @@
   justify-content: flex-start;
   align-items: center;
   align-content: center;
-  width: 100%;
-  height: 191px;
+  width: 108px;
   border-radius: 6px;
   background: #FFF;
   box-shadow: 0 2px 4px 0 rgba(186, 186, 186, 0.25);
 }
-.box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .avatar {
-  width: 94px;
-  height: 94px;
-  border-radius: 14px;
+.box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .box-ava-sell {
+  position: relative;
 }
-.box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .avatar img {
+.box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .box-ava-sell .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+  padding: 4px 4px 0;
+}
+.box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .box-ava-sell .avatar img {
   width: 100%;
   height: 100%;
-  border-radius: 10px 10px 0 0;
+  border-radius: 4px;
   border-bottom: none;
   object-fit: cover;
   vertical-align: middle;
   display: block;
 }
-.box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .name-card {
-  color: #181717;
-  text-align: center;
-  font-family: "Roboto";
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 14px;
-}
-.box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .flag-sale {
+.box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .box-ava-sell .flag-sale {
   position: absolute;
   z-index: 10;
-  width: 94px;
-  height: 94px;
+  margin-top: -104px;
 }
-.box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .flag-sale img {
+.box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .box-ava-sell .flag-sale img {
   position: absolute;
   left: 0;
   height: 40px;
   object-fit: cover;
 }
-.box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .flag-sale .flag-sale-value {
+.box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .box-ava-sell .flag-sale .flag-sale-value {
   position: absolute;
   z-index: 11;
   width: 27px;
   height: 40px;
 }
-.box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .flag-sale .flag-sale-value .sale-label {
+.box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .box-ava-sell .flag-sale .flag-sale-value .sale-label {
   color: #FFF;
   text-align: center;
   font-family: "Roboto";
@@ -294,7 +341,7 @@
   font-weight: 400;
   line-height: normal;
 }
-.box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .flag-sale .flag-sale-value .sale-value {
+.box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .box-ava-sell .flag-sale .flag-sale-value .sale-value {
   color: #FFF;
   text-align: center;
   font-family: "Roboto";
@@ -303,36 +350,40 @@
   font-weight: 700;
   line-height: 14px;
 }
-.box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .super-discount-container {
+.box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .box-ava-sell .super-discount-container {
   position: absolute;
   z-index: 12;
-  width: 94px;
-  height: 94px;
+  width: 108px;
+  margin-top: -20px;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
 }
-.box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .super-discount-container .discount-conent {
+.box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .box-ava-sell .super-discount-container .discount-conent {
   color: #FFC062;
   font-family: "Roboto";
   font-size: 8px;
   font-style: normal;
   font-weight: 700;
   line-height: 12px;
-  width: 100%;
   background: linear-gradient(90.47deg, #5216FE 5.14%, #FE3131 69.71%);
-  border-radius: 0 0 3px 3px;
+  border-radius: 0 0 2px 2px;
+  padding-left: 4px;
+  height: 20px;
+  display: flex;
+  align-items: center;
 }
 .box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .box-content {
-  margin: 0 4px;
+  margin: 4px 4px 6px;
   height: 100%;
-  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  gap: 4px;
 }
 .box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .box-content .product-name {
-  font-family: "Roboto";
+  color: #212121;
+  font-family: "Helvetica Neue";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -353,12 +404,12 @@
 }
 .box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .box-content .product-value .price-sell {
   display: flex;
-  gap: 5px;
+  gap: 8px;
   align-items: center;
 }
 .box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .box-content .product-value .price-sell .value {
   color: #E91E63;
-  font-family: "Roboto";
+  font-family: "Helvetica Neue";
   font-size: 10px;
   font-style: normal;
   font-weight: 700;
@@ -370,7 +421,7 @@
   border-radius: 2px;
   padding: 2px;
   text-align: center;
-  font-family: "Roboto";
+  font-family: "Helvetica Neue";
   font-size: 10px;
   font-style: normal;
   font-weight: 500;
@@ -379,7 +430,7 @@
 }
 .box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .box-content .product-value .price-original {
   color: #BDBDBD;
-  font-family: "Roboto";
+  font-family: "SF Pro Text";
   font-size: 8px;
   font-style: normal;
   font-weight: 400;
@@ -387,9 +438,8 @@
 }
 .box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .box-content .product-count {
   display: flex;
-  padding: 0 3px;
   align-items: center;
-  gap: 3px;
+  gap: 4px;
 }
 .box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .box-content .product-count .process {
   width: 100%;
@@ -417,24 +467,229 @@
   position: absolute;
   width: 70%;
 }
-.box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .box-content .product-count .remain {
-  color: #FF5722;
-  font-family: "Roboto";
-  font-size: 8px;
-  font-style: normal;
-  min-width: fit-content;
-}
-.box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .box-content .product-count .icon-discount {
+.box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .box-content .product-count .process .icon-discount {
   position: absolute;
   z-index: 14;
   height: 16px;
+  bottom: -4px;
+}
+.box-product-sale .list-product-sale .flash-sale .swiper-slide-cus .box-card .box-content .product-count .remain {
+  color: #FF5722;
+  font-family: "Helvetica Neue";
+  font-size: 8px;
+  font-style: normal;
+  min-width: fit-content;
+  font-weight: 500;
+  line-height: 21px;
+}
+.box-product-sale .list-product-sale .list-card-product {
+  padding: 0 10px;
+  display: flex;
+  gap: 8px;
+}
+.box-product-sale .list-product-sale .list-card-product .box-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  width: 108px;
+  border-radius: 6px;
+  background: #FFF;
+  box-shadow: 0 2px 4px 0 rgba(186, 186, 186, 0.25);
+}
+.box-product-sale .list-product-sale .list-card-product .box-card .box-ava-sell {
+  position: relative;
+}
+.box-product-sale .list-product-sale .list-card-product .box-card .box-ava-sell .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+  padding: 4px 4px 0;
+}
+.box-product-sale .list-product-sale .list-card-product .box-card .box-ava-sell .avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  border-bottom: none;
+  object-fit: cover;
+  vertical-align: middle;
+  display: block;
+}
+.box-product-sale .list-product-sale .list-card-product .box-card .box-ava-sell .flag-sale {
+  position: absolute;
+  z-index: 10;
+  margin-top: -104px;
+}
+.box-product-sale .list-product-sale .list-card-product .box-card .box-ava-sell .flag-sale img {
+  position: absolute;
+  left: 0;
+  height: 40px;
+  object-fit: cover;
+}
+.box-product-sale .list-product-sale .list-card-product .box-card .box-ava-sell .flag-sale .flag-sale-value {
+  position: absolute;
+  z-index: 11;
+  width: 27px;
+  height: 40px;
+}
+.box-product-sale .list-product-sale .list-card-product .box-card .box-ava-sell .flag-sale .flag-sale-value .sale-label {
+  color: #FFF;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.box-product-sale .list-product-sale .list-card-product .box-card .box-ava-sell .flag-sale .flag-sale-value .sale-value {
+  color: #FFF;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+}
+.box-product-sale .list-product-sale .list-card-product .box-card .box-ava-sell .super-discount-container {
+  position: absolute;
+  z-index: 12;
+  width: 108px;
+  margin-top: -20px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.box-product-sale .list-product-sale .list-card-product .box-card .box-ava-sell .super-discount-container .discount-conent {
+  color: #FFC062;
+  font-family: "Roboto";
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  background: linear-gradient(90.47deg, #5216FE 5.14%, #FE3131 69.71%);
+  border-radius: 0 0 2px 2px;
+  padding-left: 4px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+.box-product-sale .list-product-sale .list-card-product .box-card .box-content {
+  margin: 4px 4px 6px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4px;
+}
+.box-product-sale .list-product-sale .list-card-product .box-card .box-content .product-name {
+  color: #212121;
+  font-family: "Helvetica Neue";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  min-height: 30px;
+  width: 100%;
+  word-wrap: break-word;
+  text-align: left;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.box-product-sale .list-product-sale .list-card-product .box-card .box-content .product-value {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.box-product-sale .list-product-sale .list-card-product .box-card .box-content .product-value .price-sell {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.box-product-sale .list-product-sale .list-card-product .box-card .box-content .product-value .price-sell .value {
+  color: #E91E63;
+  font-family: "Helvetica Neue";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.box-product-sale .list-product-sale .list-card-product .box-card .box-content .product-value .price-sell .discount {
+  color: #FFF;
+  background: #F06292;
+  border-radius: 2px;
+  padding: 2px;
+  text-align: center;
+  font-family: "Helvetica Neue";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.box-product-sale .list-product-sale .list-card-product .box-card .box-content .product-value .price-original {
+  color: #BDBDBD;
+  font-family: "SF Pro Text";
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+.box-product-sale .list-product-sale .list-card-product .box-card .box-content .product-count {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.box-product-sale .list-product-sale .list-card-product .box-card .box-content .product-count .process {
+  width: 100%;
+  height: 8px;
+  position: relative;
+}
+.box-product-sale .list-product-sale .list-card-product .box-card .box-content .product-count .process .first-layer {
+  border-radius: 8px;
+  width: 100%;
+  height: inherit;
+  background: #FFD7D7;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.box-product-sale .list-product-sale .list-card-product .box-card .box-content .product-count .process .second-layer {
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  background-size: cover;
+  height: 8px;
+  z-index: 2;
+  background: #FF5722;
+  position: absolute;
+  width: 70%;
+}
+.box-product-sale .list-product-sale .list-card-product .box-card .box-content .product-count .process .icon-discount {
+  position: absolute;
+  z-index: 14;
+  height: 16px;
+  bottom: -4px;
+}
+.box-product-sale .list-product-sale .list-card-product .box-card .box-content .product-count .remain {
+  color: #FF5722;
+  font-family: "Helvetica Neue";
+  font-size: 8px;
+  font-style: normal;
+  min-width: fit-content;
+  font-weight: 500;
+  line-height: 21px;
 }
 
 .box-what-hot {
-  padding: 10px;
+  background: #FFF;
   display: flex;
-  gap: 17px;
+  gap: 11px;
   flex-direction: column;
+  padding-top: 12px;
 }
 .box-what-hot .label {
   color: #000;
@@ -444,35 +699,34 @@
   font-weight: 700;
   line-height: 14px;
   text-transform: uppercase;
+  padding-left: 12px;
 }
 .box-what-hot .grid-product {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 4px;
   justify-content: space-between;
   justify-items: stretch;
   align-content: space-evenly;
   width: 100%;
+  margin-bottom: 16px;
 }
 .box-what-hot .grid-product .grid-item {
   display: flex;
   justify-content: center;
 }
 .box-what-hot .grid-product .grid-item .box-product {
-  width: 170px;
-  border-radius: 12px;
+  width: 100%;
   border: 0.5px solid #AFAFAF;
   background: #FFF;
 }
 .box-what-hot .grid-product .grid-item .box-product .avatar {
-  width: 170px;
-  height: 170px;
-  border-radius: 14px;
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 .box-what-hot .grid-product .grid-item .box-product .avatar img {
   width: 100%;
   height: 100%;
-  border-radius: 10px 10px 0 0;
   border-bottom: none;
   object-fit: cover;
   vertical-align: middle;
@@ -490,8 +744,8 @@
 .box-what-hot .grid-product .grid-item .box-product .flag-sale {
   position: absolute;
   z-index: 10;
-  width: 170px;
-  height: 170px;
+  width: 178px;
+  height: 178px;
 }
 .box-what-hot .grid-product .grid-item .box-product .flag-sale img {
   position: absolute;
@@ -508,7 +762,7 @@
 .box-what-hot .grid-product .grid-item .box-product .flag-sale .flag-sale-value .sale-label {
   color: #FFF;
   text-align: center;
-  font-family: "Roboto";
+  font-family: "SF Pro Text";
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
@@ -518,7 +772,7 @@
 .box-what-hot .grid-product .grid-item .box-product .flag-sale .flag-sale-value .sale-value {
   color: #FFF;
   text-align: center;
-  font-family: "Roboto";
+  font-family: "SF Pro Text";
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -527,8 +781,8 @@
 .box-what-hot .grid-product .grid-item .box-product .super-discount-container {
   position: absolute;
   z-index: 12;
-  width: 170px;
-  height: 170px;
+  width: 178px;
+  height: 178px;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
@@ -541,7 +795,7 @@
 }
 .box-what-hot .grid-product .grid-item .box-product .super-discount-container .discount-conent .content {
   color: #FFC062;
-  font-family: "Roboto";
+  font-family: "Helvetica Neue";
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -551,9 +805,9 @@
 }
 .box-what-hot .grid-product .grid-item .box-product .box-content-product {
   display: flex;
-  padding: 5px;
+  padding: 8px;
   flex-direction: column;
-  gap: 5px;
+  gap: 12px;
 }
 .box-what-hot .grid-product .grid-item .box-product .box-content-product .name-product {
   min-height: 30px;
@@ -572,7 +826,7 @@
 }
 .box-what-hot .grid-product .grid-item .box-product .box-content-product .promotion-tag-list {
   display: flex;
-  gap: 5px;
+  gap: 8px;
 }
 .box-what-hot .grid-product .grid-item .box-product .box-content-product .promotion-tag-list .tag {
   color: #FFF;
@@ -581,8 +835,9 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  padding: 3px 10px;
-  background: #F44336;
+  padding: 4px 8px;
+  background-image: url("../assets/image/icon/tag.svg");
+  background-size: cover;
 }
 .box-what-hot .grid-product .grid-item .box-product .box-content-product .product-value {
   display: flex;
@@ -592,11 +847,11 @@
 .box-what-hot .grid-product .grid-item .box-product .box-content-product .product-value .amount {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 4px;
 }
 .box-what-hot .grid-product .grid-item .box-product .box-content-product .product-value .amount .price-sell {
-  color: #0C8441;
-  font-family: "Roboto";
+  color: #E91E63;
+  font-family: "Helvetica Neue";
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -604,7 +859,7 @@
 }
 .box-what-hot .grid-product .grid-item .box-product .box-content-product .product-value .amount .price-original {
   color: #BDBDBD;
-  font-family: "Roboto";
+  font-family: "Helvetica Neue";
   font-size: 8px;
   font-style: normal;
   font-weight: 400;
@@ -620,28 +875,23 @@
   font-weight: 400;
   line-height: 14px;
 }
-.box-what-hot .grid-product .grid-item .box-product .box-content-product hr {
-  background: #BDBDBD;
-  height: 0.1px;
-  margin: unset;
-}
-.box-what-hot .grid-product .grid-item .box-product .box-content-product .gift-info {
+.box-what-hot .grid-product .grid-item .box-product .gift-info {
   display: flex;
   align-items: center;
-  gap: 5px;
+  margin: 0 8px;
+  gap: 4px;
+  border-top: solid #BDBDBD 0.3px;
+  padding-top: 4px;
+  padding-bottom: 8px;
 }
-.box-what-hot .grid-product .grid-item .box-product .box-content-product .gift-info .avatar-gift {
-  border-radius: 6;
+.box-what-hot .grid-product .grid-item .box-product .gift-info img {
+  width: 32px;
+  border-radius: 6px;
   border: 1px solid #FFCCBC;
-  width: fit-content;
 }
-.box-what-hot .grid-product .grid-item .box-product .box-content-product .gift-info .avatar-gift img {
-  width: 26px;
-  padding: 3px;
-}
-.box-what-hot .grid-product .grid-item .box-product .box-content-product .gift-info .price {
+.box-what-hot .grid-product .grid-item .box-product .gift-info .price {
   color: #172B4D;
-  font-family: "Roboto";
+  font-family: "SF Pro Text";
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
@@ -650,11 +900,17 @@
 
 body {
   margin: unset;
-}
-.partition {
   background: #ECEFF1;
-  height: 9px;
-  width: 100%;
+}
+body .feed {
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: auto;
+}
+body a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,9 +1,9 @@
 /* Error: Undefined variable.
  *   ,
- * 4 |     top: $distance-common*2px;
+ * 6 |     top: $distance-common*2px;
  *   |          ^^^^^^^^^^^^^^^^
  *   '
- *   hero-banners.scss 4:10  root stylesheet */
+ *   hero-banners.scss 6:10  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 4 \2502      top: $distance-common*2px;\d\a   \2502           ^^^^^^^^^^^^^^^^\a   \2575 \a   hero-banners.scss 4:10  root stylesheet";
+  content: "Error: Undefined variable.\a   \2577 \a 6 \2502      top: $distance-common*2px;\d\a   \2502           ^^^^^^^^^^^^^^^^\a   \2575 \a   hero-banners.scss 6:10  root stylesheet";
 }
